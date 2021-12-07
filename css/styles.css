@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Chango', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+
+body{
+    color: #3f221a;
+    background-color: #f4f2f0;
+    margin: auto;
+}
+
+h1{
+    background: no-repeat url(../img/logo.png);
+    font-size: 0;
+    width: 200px;
+    height: 100px;    
+}
+
+h2{
+    font-family: 'Chango', cursive;
+    margin-bottom: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: #3f221a;
+}
+
+a:hover{
+    color: #d8a586;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.dot{
+    height: 20px;
+    width: 20px;
+    background-color: #d8a586;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+.dot a{
+    font-size: 1px;
+    color: transparent;
+}
+
+.dots{
+    text-align: center;
+}
+
+/*** HEADER ***/
+
+#naveg{
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: #f4f2f0;
+    z-index: 99;
+}
+
+#hambur li{
+    position: absolute;
+    top: 1.5em;
+    right: 1em;    
+}
+
+#hambur li a{
+    background: no-repeat url(../img/menu.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    display: block;
+}
+
+#naveg, #cerrar{
+    display: none;
+}
+
+#abrir:target #naveg{
+    display: block;
+}
+
+#abrir:target #abrir{
+    display: none;
+}
+
+#abrir:target #cerrar{
+    display: block;
+}
+
+#naveg li {
+    width: 90%;
+    text-align: center;
+}
+
+#pc{
+    display: none ;
+}
+
+#boton{
+    background-color: #d8a586;
+    color: #f4f2f0;
+    border-radius: 8px;
+    padding: 0.7em;
+    margin-top: 1.5em;
+}
+
+/*** BANNER ***/
+
+#banner1{
+    background: url(../img/bannermob1.png) no-repeat;
+    background-color: #f4f2f0;
+    width: 300px;
+    height: 170px;
+    position: relative;
+}
+
+#banner2{
+    background: url(../img/mobile3.png) no-repeat;
+    background-color: #f4f2f0;
+    width: 300px;
+    height: 170px;
+    position: absolute;
+    display: none;
+}
+
+#banner li:target{
+    display: inline-block;
+}
