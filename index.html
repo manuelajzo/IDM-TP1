@@ -11,15 +11,15 @@
 </head>
 
 <body>
-    <header id="abrir">
+    <header id="abrirmenu">
         <nav>
             <h1><a href="#">Malk</a></h1>
             <ul id="hambur">
-                <li id="abrir"><a href="#abrir">Abrir</a></li>
+                <li id="abrir"><a href="#abrirmenu">Abrir</a></li>
                 <li id="cerrar"><a href="#">Cerrar</a></li>
             </ul>
             <ul id="naveg">
-                <li><a href="#sobrenos">Sobre nosotros</a></li>
+                <li><a href="#sobrenos">Nosotros</a></li>
                 <li><a href="#beneficios">Beneficios</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#recetas">Recetas</a></li>
@@ -31,14 +31,18 @@
     <section id="banner">
         <ul>
             <li id="banner1">
-                <h2>La alternativa natural</h2>
-                <p id="pc">Reemplazá la leche de origen animal por una opción beneficiosa, saludable y riquisima</p>
-                <a href="#sobrenos" id="boton">Saber más</a>
+                <div>
+                    <h2>La alternativa natural</h2>
+                    <p class="pc">Reemplazá la leche de origen animal por una opción beneficiosa, saludable y riquisima</p>
+                    <a href="#sobrenos" class="boton">Saber más</a>
+                </div>
             </li>
             <li id="banner2">
-                <h2>Para todos los días</h2>
-                <p id="pc">Tenemos cuatro variantes perfectas para todos los días. Probalas en recetas o ¡solas!</p>
-                <a href="#productos" id="boton">Conocelas</a>
+                <div>
+                    <h2>Para todos los días</h2>
+                    <p class="pc">Tenemos cuatro variantes perfectas para todos los días. Probalas en recetas o ¡solas!</p>
+                    <a href="#productos" class="boton">Conocelas</a>
+                </div>
             </li>
         </ul>
         <div>
@@ -54,39 +58,43 @@
         <p>
             Somos una empresa argentina que produce alimentos saludables para mejorar la calidad de vida de las personas sin crueldad animal, aditivos ni conservantes.
         </p>
-        <p>
+        <p id="derecha">
             Nos tomamos el tiempo necesario para encontrar el balance entre calidad, sustentabilidad y sabor, poniéndole los beneficios que necesitamos en nuestra alimentación y trabajando únicamente con materias primas naturales.
-          </p>
+        </p>
     </section>
 
     <main>
         <section id="beneficios">
             <h2>Beneficios</h2>
-            <p>
-                Ya sea por intolerancia a la lactosa, veganismo, o si simplemente prefieres no consumir productos lácteos, las leches vegetales son una opción muy saludable. Beber y producir leche vegetal tiene muchos beneficios, tanto para el ser humano como para el medio ambiente. Contienen gran concentración de minerales, vitaminas, calcio y ácidos grasos esenciales.
-            </p>
-            <p>
-                Además, según investigaciones de la Organización Mundial de la Salud, una dieta de alimentos integrales basada en plantas, puede ayudar a prevenir problemas de salud como la hipertensión, la obesidad, la diabetes, algunas enfermedades cardíacas y algunos tipos de cáncer.
-            </p>
-            <p>
-                Las leches vegetales MALK son un producto 100% natural y sin conservantes, es por eso que su duración es más limitada que la de una leche animal. Debido a que las leches vegetales se sedimentan luego de preparadas, se sugiere siempre revolver la preparación antes de servir, de esta manera se conservará y se aprovechará mejor el contenido.
-            </p>
+            <div class="bloque">
+                <p>
+                    Ya sea por intolerancia a la lactosa, veganismo, o si simplemente prefieres no consumir productos lácteos, las leches vegetales son una opción muy saludable. Beber y producir leche vegetal tiene muchos beneficios, tanto para el ser humano como para el medio ambiente. Contienen gran concentración de minerales, vitaminas, calcio y ácidos grasos esenciales.
+                </p>
+                <p>
+                    Además, según investigaciones de la Organización Mundial de la Salud, una dieta de alimentos integrales basada en plantas, puede ayudar a prevenir problemas de salud como la hipertensión, la obesidad, la diabetes, algunas enfermedades cardíacas y algunos tipos de cáncer.
+                </p>
+                <p>
+                    Las leches vegetales MALK son un producto 100% natural y sin conservantes, es por eso que su duración es más limitada que la de una leche animal. Debido a que las leches vegetales se sedimentan luego de preparadas, se sugiere siempre revolver la preparación antes de servir, de esta manera se conservará y se aprovechará mejor el contenido.
+                </p>                
+            </div>
             <picture>
-                <source media="(min-width: 890px)" srcset="img/leche-almendras-original.jpg">
-                <source media="(min-width: 480px)" srcset="img/leche-almendras-beneficios-tablet.jpg">
+                <source media="(min-width: 801px)" srcset="img/leche-almendras-original.jpg">
+                <source media="(min-width: 480px)" srcset="img/leche-almendras-beneficios-tablet02.jpg">
                 <img src="img/leche-almendras-beneficios-mobile.jpg" class="d-block w-100" alt="Imagen ilustrativa de leche de almendras">
             </picture>
-            <p>
-                Se pueden utilizar en recetas y preparaciones como sustituto de la leche animal. Por ejemplo la leche de avena MALK es un excelente sustituto en postres y preparaciones dulces en general. La avena tiene muy buena consistencia para cremas, y además no altera en gran medida el sabor principal de la preparación en cuestión.
-            </p>
-            <p>
-                La leche de almendras MALK es ideal para todos los días. Favorece la reducción de los niveles de colesterol, contiene vitamina E que ayuda a reducir la oxidación de nuestras células, es rica en fibra, lo que ayuda a mantener una adecuada salud intestinal, además de tener un efecto saciante, y es rica en calcio, por lo que está indicada también para fases de crecimiento.
-            </p>
-            <p>
-                La leche de castañas MALK, por su contenido en vitamina C, también es antioxidante. Ayuda a estimular el sistema inmunitario, y por su aporte en hidratos de carbono puede ser una bebida ideal para niños, ancianos y atletas, convirtiéndose en una excelente fuente de energía.
-            </p>
-            <div>
-                <ul class="benef">
+            <div class="bloque">
+                <p>
+                    Se pueden utilizar en recetas y preparaciones como sustituto de la leche animal. Por ejemplo la leche de avena MALK es un excelente sustituto en postres y preparaciones dulces en general. La avena tiene muy buena consistencia para cremas, y además no altera en gran medida el sabor principal de la preparación en cuestión.
+                </p>
+                <p>
+                    La leche de almendras MALK es ideal para todos los días. Favorece la reducción de los niveles de colesterol, contiene vitamina E que ayuda a reducir la oxidación de nuestras células, es rica en fibra, lo que ayuda a mantener una adecuada salud intestinal, además de tener un efecto saciante, y es rica en calcio, por lo que está indicada también para fases de crecimiento.
+                </p>
+                <p>
+                    La leche de castañas MALK, por su contenido en vitamina C, también es antioxidante. Ayuda a estimular el sistema inmunitario, y por su aporte en hidratos de carbono puede ser una bebida ideal para niños, ancianos y atletas, convirtiéndose en una excelente fuente de energía.
+                </p>
+            </div>
+            <div id="pastis">
+                <ul>
                     <li id="nongmo">
                       <p>Libre de organismos genéticamente modificados</p>
                     </li>
@@ -111,27 +119,49 @@
 
         <section id="productos">
             <h2>Nuestros productos</h2>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <h3>Malk original</h3>
-                    <p>Cremosa y deliciosa hecha 100% con almendras orgánicas. Perfecta para todos los días.</p>
-                    <p>Ideal para cocinar como sustituto de la leche de vaca en tus recetas.</p>
+            <ul id="prods">
+                <li id="original">
+                    <div class="card">
+                        <picture>
+                            <source media="(min-width: 480px)" srcset="img/bottle.png"> 
+                            <img src="img/bottlemob.png" alt="Malk original">
+                        </picture>
+                        <h3>Malk original</h3>
+                        <p>Cremosa y deliciosa hecha 100% con almendras orgánicas. Perfecta para todos los días.</p>
+                    </div>
                 </li>
-                <li>
-                    <h3>Malk sin azúcares</h3>
-                    <p>Tiene sólo 28 calorías por porción, no tiene lactosa ni colesterol. Ideal para quienes eligen alimentarse mejor y con muy bajas calorías.</p>
-                    <p>Ingredientes: almendras orgánicas, agua.</p> 
+                <li id="zero">
+                    <div class="card">
+                        <picture>
+                            <source media="(min-width: 480px)" srcset="img/bottlealm2.png"> 
+                            <img src="img/bottlealm2mob.png" alt="Malk original">
+                        </picture>
+                        <h3>Malk sin azúcares</h3>
+                        <p>Tiene sólo 28 calorías por porción, no tiene lactosa ni colesterol. Ideal para quienes eligen alimentarse mejor y con muy bajas calorías.</p>
+                        <p>Ingredientes: almendras orgánicas, agua.</p> 
+                    </div>
                 </li>
-                <li>
-                    <h3>Malk Avena</h3>
-                    <p>Rica y saludable como la de almendras, pero además es fuente de fibra. No tiene azúcar y tiene sólo 48 calorías por porción. Ideal para quienes eligen alimentarse mejor y con más sabor.</p>
-                    <p>Ingredientes: avena orgánica, agua.</p>
+                <li id="avena">
+                    <div class="card">
+                        <picture>
+                            <source media="(min-width: 480px)" srcset="img/bottleavena.png"> 
+                            <img src="img/bottleavenamob.png" alt="Malk original">
+                        </picture>
+                        <h3>Malk Avena</h3>
+                        <p>Rica y saludable como la de almendras, pero además es fuente de fibra. No tiene azúcar y tiene sólo 48 calorías por porción. Ideal para quienes eligen alimentarse mejor y con más sabor.</p>
+                        <p>Ingredientes: avena orgánica, agua.</p>
+                    </div>
                 </li>
-                <li>
-                    <h3>Malk castañas</h3>
-                    <p>La bebida vegetal de castañas es rica en carbohidratos, fósforo, calcio, magnesio, potasio y vitaminas del grupo B.</p>
-                    <p>Ingredientes: Agua, castañas de Cajú orgánicas, sal, carbonato de calcio.</p>
+                <li id="castanias">
+                    <div class="card">
+                        <picture>
+                            <source media="(min-width: 480px)" srcset="img/bottlecastanias.png"> 
+                            <img src="img/bottlecastaniasmob.png" alt="Malk castañas">                           
+                        </picture>
+                        <h3>Malk castañas</h3>
+                        <p>La bebida vegetal de castañas es rica en carbohidratos, fósforo, calcio, magnesio, potasio y vitaminas del grupo B.</p>
+                        <p>Ingredientes: Agua, castañas de Cajú orgánicas, sal, carbonato de calcio.</p>
+                    </div>
                 </li>
             </ul>
 
@@ -139,7 +169,7 @@
                 <li class="dot"><a href="#original">Malk original </a></li>
                 <li class="dot"><a href="#zero">Malk sin azúcares</a></li>
                 <li class="dot"><a href="#avena">Malk avena</a></li>
-                <li class="dot"><a href="#castania">Malk castañas</a></li>
+                <li class="dot"><a href="#castanias">Malk castañas</a></li>
               </ul>
         </section>
     </main>
@@ -147,8 +177,8 @@
     <aside id="recetas">
         <h2>Recetas</h2>
         <p>Descubrí nuestro canal de recetas hechas con MALK</p>
-        <figure class="ratio ratio-21x9">
-            <iframe src="https://www.youtube.com/embed/5MXqAWZd85w" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope picture-in-picture" allowfullscreen></iframe>
+        <figure id="video">
+            <iframe src="https://www.youtube.com/embed/5MXqAWZd85w" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </figure>
     </aside>
 
@@ -158,17 +188,6 @@
             Nos encanta recibir comentarios, sugerencias, opiniones o lo que tengas ganas de contarnos. ¡Escribinos!
         </p>
         <form action="enviar_formulario.php" method="post" enctype="multipart/form-data">
-<<<<<<< Updated upstream
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre">
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido">
-            <label for="mail">Email:</label>
-            <input type="mail">
-            <label for="comentarios">Comentarios:</label>
-            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-            <button type="submit">Enviar</button>
-=======
             <div class="contactocol">
                 <div>
                     <label for="nombre">Nombre:</label>
@@ -196,33 +215,34 @@
             <div id="formboton">
                 <input type="submit" class="boton" value="Enviar">
             </div>
->>>>>>> Stashed changes
+                <input type="submit" class="boton" value="Enviar"></input>
+            </div>
         </form>
     </aside>
 
     <footer>
-        <div>
-            <ul class="row" id="mapa">
-                <li class="col-12"><a href="#">Malk</a></li>
-                <li class="col-12"><a href="#sobrenos">Sobre nosotros</a></li>
-                <li class="col-12"><a href="#beneficios">Beneficios</a></li>
-                <li class="col-12"><a href="#productos">Productos</a></li>
-                <li class="col-12"><a href="#recetas">Recetas</a></li>
-                <li class="col-12"><a href="#contacto">Contacto</a></li>
+        <div class="footcol">
+            <ul id="sitemap">
+                <li><a href="#" id="logofooter">Malk</a></li>
+                <li><a href="#sobrenos">Sobre nosotros</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#recetas">Recetas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
-        <div>
-            <ul class="redes">
+        <div class="footcol">
+            <ul class="rrss">
                 <li><a id="ig" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                <li><a target="_blank" id="tw" href="https://www.twitter.com/">Twitter</a></li>
+                <li><a target="_blank" id="yt" href="https://www.youtube.com/">Youtube</a></li>
                 <li><a target="_blank" id="fb" href="https://www.facebook.com/">Facebook</a></li>
             </ul>
-            <ul>
+            <ul id="datos">
                 <li>Manuela Jaureguialzo</li>
                 <li>DWN2B</li>
                 <li>Interacción con Dispositivos Móviles</li>
                 <li>2021</li>
-              </ul>
+            </ul>
         </div>
     </footer>
 </body>
