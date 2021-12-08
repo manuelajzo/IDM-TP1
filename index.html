@@ -158,6 +158,7 @@
             Nos encanta recibir comentarios, sugerencias, opiniones o lo que tengas ganas de contarnos. ¡Escribinos!
         </p>
         <form action="enviar_formulario.php" method="post" enctype="multipart/form-data">
+<<<<<<< Updated upstream
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" id="nombre">
             <label for="apellido">Apellido:</label>
@@ -167,6 +168,35 @@
             <label for="comentarios">Comentarios:</label>
             <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
             <button type="submit">Enviar</button>
+=======
+            <div class="contactocol">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
+            </div>
+            <div class="contactocol">
+                <div>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail">
+                </div>
+                <div>
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+            </div>
+            <div>
+                <label for="comentarios">Comentarios:</label>
+                <textarea name="comentarios" id="comentarios"></textarea>
+            </div>
+            <div id="formboton">
+                <input type="submit" class="boton" value="Enviar">
+            </div>
+>>>>>>> Stashed changes
         </form>
     </aside>
 
