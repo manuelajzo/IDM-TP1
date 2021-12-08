@@ -145,6 +145,10 @@ ul, li{
     width: 75%;
 }
 
+#banner{
+    position: relative;
+}
+
 #banner1{
     background: #f4f2f0 url(../img/mobile2.png) no-repeat center right;
     background-size: cover;
