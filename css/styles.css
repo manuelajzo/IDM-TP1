@@ -24,15 +24,26 @@ h1{
 h2{
     font-family: 'Chango', cursive;
     margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    padding: 1em;
 }
 
 a{
     text-decoration: none;
-    color: #3f221a;
+    color: #d8a586;
 }
 
 a:hover{
-    color: #d8a586;
+    color: #3f221a;
 }
 
 ul, li{
@@ -49,12 +60,31 @@ ul, li{
 }
 
 .dot a{
-    font-size: 1px;
+    height: 20px;
+    width: 20px;
+    font-size: 0;
+    display: block;
     color: transparent;
 }
 
 .dots{
     text-align: center;
+    margin-top: 2em;
+}
+
+.pc{
+    display: none ;
+}
+
+.boton{
+    background-color: #d8a586;
+    color: #f4f2f0;
+    border-radius: 8px;
+    border: 0;
+    padding: 0.7em;
+    margin-top: 1.5em;
+    width: 120px;
+    display: block;
 }
 
 /*** HEADER ***/
@@ -63,7 +93,8 @@ ul, li{
     position: absolute;
     display: none;
     width: 100%;
-    background-color: #f4f2f0;
+    background-color: #cbdee5;
+    padding: 1.2em;
     z-index: 99;
 }
 
@@ -86,54 +117,484 @@ ul, li{
     display: none;
 }
 
-#abrir:target #naveg{
+#abrirmenu:target #naveg{
     display: block;
 }
 
-#abrir:target #abrir{
+#abrirmenu:target #abrir{
     display: none;
 }
 
-#abrir:target #cerrar{
+#abrirmenu:target #cerrar{
     display: block;
 }
 
 #naveg li {
     width: 90%;
     text-align: center;
-}
-
-#pc{
-    display: none ;
-}
-
-#boton{
-    background-color: #d8a586;
-    color: #f4f2f0;
-    border-radius: 8px;
-    padding: 0.7em;
-    margin-top: 1.5em;
+    padding: 1em;
 }
 
 /*** BANNER ***/
 
+#banner{
+    position: relative;
+}
+
+#banner ul li div{
+    width: 75%;
+}
+
 #banner1{
-    background: url(../img/bannermob1.png) no-repeat;
-    background-color: #f4f2f0;
-    width: 300px;
-    height: 170px;
+    background: #f4f2f0 url(../img/mobile2.png) no-repeat center right;
+    background-size: cover;
+    max-width: 100vw;
+    height: calc(100vw * 0.7104166666666667);
     position: relative;
 }
 
 #banner2{
-    background: url(../img/mobile3.png) no-repeat;
-    background-color: #f4f2f0;
-    width: 300px;
-    height: 170px;
+    background: #f4f2f0 url(../img/mobile3.png) no-repeat center right;
+    background-size: cover;
+    width: 100vw;
+    height: calc(100vw * 0.7104166666666667);
+    top: 0;
     position: absolute;
     display: none;
 }
 
 #banner li:target{
     display: inline-block;
+}
+
+#banner h2{
+    text-align: left;
+    margin-top: 0;
+}
+
+#banner p{
+    text-align: left;
+}
+
+/*** SOBRE NOSOTROS ***/
+
+#sobrenos h2{
+    background: url(../img/sobrenos.png) no-repeat;
+    border-bottom: 10em solid transparent;
+    background-position: 50% -50%;
+    padding: 0;
+}
+
+/*** BENEFICIOS ***/
+
+#beneficios{
+    text-align: center;
+}
+
+#beneficios p{
+    margin-top: 1em;
+}
+
+#beneficios img{
+    margin-top: 1em;
+}
+
+#pastis{
+    position: relative;
+    top: 20px;
+    width: 100%;
+}
+
+#pastis p{
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+#pastis :first-child li{
+    background-color: #f4f2f0;
+    border-top: 11em solid transparent;
+    width: 100%;
+    background-position: 50% 152%;  
+}
+
+#nongmo{
+    background: no-repeat url(../img/nongmo.png);
+    position: relative;
+}
+
+#vegan{
+    background: no-repeat url(../img/vegan.png);
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+#tacc{
+    background: no-repeat url(../img/tacc.png);
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+#natural{
+    background: no-repeat url(../img/natural.png);
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+#pastis li:target{
+    display: inline-block;
+} 
+
+/*** PRODUCTOS ***/
+
+#productos{
+    font-size: .9em;
+    position: relative;
+}
+
+#productos h2{
+    padding: 1em;
+}
+
+#productos li{
+    text-align: center;
+    vertical-align: top;
+}
+
+#prods li{
+    border-radius: 1em;
+    border: 0;
+    background-color: #cbdee5;
+    text-align: center;
+    margin: 1em;
+    padding-bottom: 1em;
+}
+
+#original{
+    position: relative;
+    top: 0;
+    background-color: #cbdee5;
+}
+
+#zero, #avena, #castanias{
+    position: absolute;
+    display: none;
+    top: 0;
+    background-color: #cbdee5;
+}
+
+#productos ul li:target{
+    display: block;
+}
+
+/*** RECETAS ***/
+
+figure{
+    text-align: center;
+}
+
+#video{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+}
+    
+#video iframe, #video object, #video embed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*** FORM ***/
+
+#contacto{
+    border-radius: 1em;
+    border: 0;
+    background-color: #cbdee5;
+    text-align: center;
+    margin: 1em;
+    padding-bottom: 1em;
+}
+
+#contacto h2{
+    padding-top: 1em;
+}
+
+form{
+    padding: 1em;
+}
+
+form div{
+    margin-bottom: 1em;
+}
+
+label{
+    margin-bottom: 1em;
+}
+
+input, textarea{
+    border-radius: 1em;
+    line-height: 2em;
+    border-color: #cbdee5;
+}
+
+textarea{
+    height: 10em;
+}
+
+#formboton{
+    width: 123px;
+    margin: auto;
+}
+
+/*** FOOTER ***/
+
+footer{
+    width: 100%;
+    background-color: #3f221a;
+    color: #cbdee5;
+}
+
+footer a{
+    color: #cbdee5;
+}
+
+footer ul{
+    text-align: center;
+    margin-top: 1em;
+}
+
+footer li{
+    padding: 0.5em;
+}
+
+#logofooter{
+    background: url(../img/logo2.png) no-repeat;
+    display: inline-block;
+    font-size: 0;
+    width: 200px;
+    height: 100px;
+}
+
+#sitemap{
+    margin-bottom: 1em;
+}
+
+.rrss a{
+    display: inline-block;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+}
+
+#ig{
+    background-image: url(../img/ig.png);
+}
+
+#yt{
+    background-image: url(../img/yt.png);
+}
+
+#fb{
+    background-image: url(../img/fb.png);
+}
+
+.gracias{
+    width: 80%;
+    background-color: #cbdee5;
+    border-radius: 1em;
+    border: 0;
+    padding: 1em;
+    margin: auto;
+}
+
+@media screen and (min-width: 481px) {
+    .boton{
+        width: 140px;
+    }
+    #banner{
+        font-size: 1.2em;
+    }
+    #banner1{
+        background: #f4f2f0 url(../img/bannertab01.png) no-repeat center right;
+        background-size: cover;
+        max-width: 100vw;
+        height: calc(100vw * 0.7123595505617978);
+    }
+    #banner2{
+        background: #f4f2f0 url(../img/bannertab02.png) no-repeat center right;
+        background-size: cover;
+        max-width: 100vh;
+        height: calc(100vw * 0.7123595505617978);
+    }
+    .pc{
+        display: inline-block;
+        padding: 0;
+        margin-bottom: 2em;
+    }
+    p{
+        padding: 1.5em;
+    }
+    #tacc, #natural{
+        border-top: 12em solid transparent !important;
+    }
+    #contacto{
+        width: 80%;
+        margin: auto;
+    }
+    .rrss{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    #pastis .dots, #productos .dots{
+        display: none;
+    }
+    #hambur{
+        display: none;
+    }
+    #naveg{
+        display: flex;
+        top: 0;
+        right: 0;
+        width: 75%;
+        background-color: transparent;
+    }
+    #banner1{
+        background: #f4f2f0 url(../img/bannerpc.png) no-repeat center right;
+        background-size: cover;
+        max-width: 100vw;
+        height: calc(100vw * 0.712890625);
+    }
+    #banner2{
+        background: #f4f2f0 url(../img/bannerpc02.png) no-repeat center right;
+        background-size: cover;
+        max-width: 100vw;
+        height: calc(100vw * 0.712890625);
+        right: 0;
+        padding-left: 1em;
+    }
+    #beneficios img{
+        max-width: 100%;
+    }
+    #sobrenos p{
+        width: 50%;
+        text-align: left;
+    }
+    #derecha{
+        float: right;
+        margin-top: -9em;
+    }
+    .bloque{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            'p1 p2 p3'
+            'p4 p5 p6';
+        gap: 10px;
+    }
+    .bloque:first-child{
+        grid-area: p1;
+    }
+    .bloque:nth-child(2){
+        grid-area: p2;
+    }
+    .bloque:nth-child(3){
+        grid-area: p3;
+    }
+    .bloque:nth-child(4){
+        grid-area: p4;
+    }
+    .bloque:nth-child(5){
+        grid-area: p5;
+    }
+    .bloque:nth-child(6){
+        grid-area: p6;
+    }
+    .bloque p{
+        text-align: left;
+    }
+    #pastis li{
+        position: relative;
+        display: inline-block;
+        width: 40% !important;
+        height: 300px;
+        transition: transform .2s;
+        vertical-align: top;
+    }
+    #pastis li:hover {
+        transform: scale(0.9);
+    }
+    #pastis p{
+        padding-top: 1em;
+    }
+    #nongmo, #vegan{
+        background-position: 50% 228% !important;
+    }
+    #tacc, #natural{
+        background-position: 50% 200% !important;
+    }
+    #prods {
+        width: 100%;
+        text-align: center;
+    }
+    #productos li{
+        display: inline-block;
+        position: relative;
+        transition: transform .2s;
+        width: 40%;
+        height: 550px;
+    }
+    #productos li:hover {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (min-width: 849px) {
+    #formboton{
+        width: 140px;
+        margin: auto;
+    }
+    .contactocol{
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    input{
+        width: 60%;
+    }
+    label{
+        display: block;
+    }
+    textarea{
+        height: 8em;
+        width: 70%;
+    }
+    footer{
+        margin-top: 1em;
+    }
+    .footcol{
+        display: inline-block;
+        width: 45%;
+        vertical-align: middle;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    
 }
